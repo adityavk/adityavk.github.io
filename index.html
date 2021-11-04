@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Aditya Vikram</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <img src="assets/images/display-picture.jpg" alt="Display picture" />
+            </div>
+            <div class="author-content">
+              <h4>Aditya Vikram</h4>
+              <span>Software developer</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://github.com/adityavk"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:adityavikram54@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="about">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span>
+              Hi! I'm a software developer working currently at Adobe Systems. I graduated from Indian Institute of Technology Kanpur in 2018. My interests lie in the areas of Machine learning and Computer Systems. In my free time, I like reading, gaming and going down Youtube rabbit holes sometimes.
+            </span>
+            <div class="red-button" style="margin-top: 30px;">
+              <a href="assets/docs/Resume.pdf">Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="projects">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Projects</h2>
+            <div class="line-dec"></div>
+            <span>Here are some of my undergraduate projects.</span>
+          </div>
+          <ul>
+            <li class="projectItem">
+              <h5>Online MCMC based Bayesian Learning&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/OnlineMCMC.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              A survey of Online Markov Chain Monte Carlo methods and their importance for bayesian inference over a large dataset. Implemented Stochastic Gradient Riemannian Langevin Dynamics (SGRLD), an extension of SGLD which overcomes its limitations in constrained settings.
+            </li>
+            <li class="projectItem">
+              <h5>Grammatical Error Correction in Sentences&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/GrammaticalCorrection.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Implemented a LSTM based sequence-to-sequence model to correct grammatical errors in sentences, trained and tested on NUCLE dataset with sub-sampling.
+            </li>
+            <li class="projectItem">
+              <h5>Interior Point Methods&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/InteriorPointMethods.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              A survey of interior point methods along with its evolution and applications to speed up optimization. Implemented an interior point method for ℓ<sub>1</sub>-regularized least squares and compared its performance with other state-of-the-art softwares on a sparse recovery problem with a large matrix.
+            </li>
+            <li class="projectItem">
+              <h5>Brittle ML: Playing Satan&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/AdverserialML.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Studied and implemented a blackbox adversarial attack on Inception-v3 in Tensorflow to craft adversarial examples for images.
+            </li>
+            <li class="projectItem">
+              <h5>PhotoEditor&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/PhotoEditor.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="https://github.com/adityavk/IP"><i class="fa fa-github"></i></a>
+                </span>
+              </h5>
+              Implemented a GUI app for red-eye correction and object removal in images for a <em>Digital Image Processing</em> course.
+            </li>
+            <li class="projectItem">
+              <h5>Advances in MIMO:System Model and Potentials&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/MIMOAdvances.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Performed a literature survey of Multiple-Input Multiple-Output (MIMO) systems and their potential in 4G and 5G, with a detailed review on latest development such as Multi-user MIMO, Massive MIMO and MIMO-OFDM techniques, emphasizing their importance in cellular communication systems.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+    </script>
+  </body>
+</html>
