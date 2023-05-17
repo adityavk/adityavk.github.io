@@ -67,8 +67,13 @@
             <span>
               Hi! I'm a first year student enrolled in Master's in Computer Science program at Georgia Institute of Technology. My interests lie in Systems and Probabilistic Machine Learning. Prior to joining Georgia Tech, I worked as a software developer at Adobe Inc., where I worked on a number of platform and extensibility SDKs used across Adobe apps. I graduated from Indian Institute of Technology Kanpur in 2018. In my free time, I like reading, playing badminton and basketball, swimming, and watching TV shows.
             </span>
-            <div class="red-button" style="margin-top: 30px;">
-              <a href="assets/docs/Resume.pdf">Resume</a>
+            <div class="button-container">
+              <div class="red-button">
+                <a href="assets/docs/Aditya_Vikram_Resume.pdf">Resume</a>
+              </div>
+              <div class="red-button">
+                <a href="assets/docs/Aditya_Vikram_CV.pdf">Full CV</a>
+              </div>
             </div>
           </div>
         </div>
@@ -79,9 +84,54 @@
           <div class="section-heading">
             <h2>Projects</h2>
             <div class="line-dec"></div>
-            <span>Here are some of my undergraduate projects.</span>
+            <span>Here are some of the projects I have worked on.</span>
           </div>
           <ul>
+            <li class="projectItem">
+              <h5>Projection-free Online Learning: A Review&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/ProjectionFreeOLReview.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              A survey of methods to overcome the computational bottleneck of the projection step in the Online Gradient Descent algorithm. The paper summarizes two alternate approaches: the Online Frank-Wolfe and Fast Approximate Projection algorithms, including their key insights. Both methods are evaluated on metrics like domain assumptions, time complexity, and regret bounds.
+            </li>
+            
+            <li class="projectItem">
+              <h5>GTStore&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/GTStore.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              A distributed key-value store using gRPC, that provides fault-tolerance through data replication. Implemented a data partitioning scheme for even load distribution and a heartbeat mechanism for load-balancing on storage failures.
+            </li>
+            
+            <li class="projectItem">
+              <h5>GTFileSystem: A recoverable file system&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/GTFileSystem.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Implemented a File System library for data persistence and crash recovery using in-memory logs and disk logging. It internally uses a transaction system allowing commit, abort, and flush operations for file writes. The read and open APIs are appropriately modified for efficiency and correctness.
+            </li>
+            
+            <li class="projectItem">
+              <h5>TinyFile Service and Client&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/TinyFileService.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Designed the TinyFile service and client library with sync and async APIs for concurrent file compression while adhering to Xen's Dom0 paradigm, using System-V IPC and semaphores for synchronization and shared memory segments for efficient data transfer between service and clients.
+            </li>
+            
+            <li class="projectItem">
+              <h5>GTThreads Credit Scheduler&nbsp;&nbsp;&nbsp;
+                <span>
+                  <a href="assets/docs/GTThreads.pdf"><i class="fa fa-file-pdf-o"></i></a>
+                </span>
+              </h5>
+              Implemented Xen Credit Scheduler using the GTThreads library where threads get CPU time proportionally to their allotted credits, with load-balancing and yield functionality.
+            </li>
+            
             <li class="projectItem">
               <h5>Online MCMC based Bayesian Learning&nbsp;&nbsp;&nbsp;
                 <span>
